@@ -1,6 +1,6 @@
-# My Great Project - Code
+# Warcraft Chess - Code
 
-My Great Project is laid out in three main projects:
+Warcraft Chess is laid out in three main projects:
 
  - The domain model
  

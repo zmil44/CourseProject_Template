@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftChess", "WarcraftChess\WarcraftChess.csproj", "{20E81804-D9B5-4B0A-A5DC-1CD0D5EE6441}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftChess.WebUI", "WarcraftChess\WarcraftChess.WebUI.csproj", "{20E81804-D9B5-4B0A-A5DC-1CD0D5EE6441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftChess.Domain", "..\WarcraftChess.Domain\WarcraftChess.Domain.csproj", "{0E63DB43-9866-4A53-9289-40F49E9EEED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftChess.Test", "WarcraftChess.Test\WarcraftChess.Test.csproj", "{4536DE68-246E-49DD-8F55-710830BF0BBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{20E81804-D9B5-4B0A-A5DC-1CD0D5EE6441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20E81804-D9B5-4B0A-A5DC-1CD0D5EE6441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20E81804-D9B5-4B0A-A5DC-1CD0D5EE6441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E63DB43-9866-4A53-9289-40F49E9EEED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E63DB43-9866-4A53-9289-40F49E9EEED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E63DB43-9866-4A53-9289-40F49E9EEED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E63DB43-9866-4A53-9289-40F49E9EEED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4536DE68-246E-49DD-8F55-710830BF0BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4536DE68-246E-49DD-8F55-710830BF0BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4536DE68-246E-49DD-8F55-710830BF0BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4536DE68-246E-49DD-8F55-710830BF0BBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
