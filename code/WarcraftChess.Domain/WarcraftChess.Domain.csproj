@@ -40,7 +40,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\PlayerEngine.cs" />
+    <Compile Include="Concrete\Board.cs" />
+    <Compile Include="Concrete\CheckStatus.cs" />
+    <Compile Include="Concrete\Game.cs" />
+    <Compile Include="Concrete\Move.cs" />
+    <Compile Include="Concrete\MoveDirection.cs" />
+    <Compile Include="Concrete\Piece.cs" />
+    <Compile Include="Concrete\PieceColor.cs" />
+    <Compile Include="Concrete\PieceSet.cs" />
+    <Compile Include="Concrete\Pieces\Druid.cs" />
+    <Compile Include="Concrete\Pieces\Hunter.cs" />
+    <Compile Include="Concrete\Pieces\Mage.cs" />
+    <Compile Include="Concrete\Pieces\Paladin.cs" />
+    <Compile Include="Concrete\Pieces\Priest.cs" />
+    <Compile Include="Concrete\Pieces\Shaman.cs" />
+    <Compile Include="Concrete\Pieces\Warrior.cs" />
+    <Compile Include="Concrete\PieceType.cs" />
+    <Compile Include="Concrete\Player.cs" />
+    <Compile Include="Concrete\Result.cs" />
+    <Compile Include="Concrete\Square.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entitiy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
