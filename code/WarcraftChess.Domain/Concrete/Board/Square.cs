@@ -15,5 +15,9 @@ namespace WarcraftChess.Domain.Concrete
             Row = i;
             Column = j;
         }
+
+        public Square()
+        {
+        }
     }
 }

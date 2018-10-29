@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WarcraftChess.Domain.Concrete.Pieces
 {
-    class Paladin
+    class Paladin : Piece
     {
     }
 }

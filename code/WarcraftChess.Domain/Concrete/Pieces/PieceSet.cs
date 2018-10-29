@@ -8,5 +8,7 @@ namespace WarcraftChess.Domain.Concrete
 {
     class PieceSet
     {
+        List<Piece> pieces = new List<Piece>();
+        PieceColor color = new PieceColor();
     }
 }
