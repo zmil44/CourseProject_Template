@@ -28,7 +28,7 @@ namespace WarcraftChess.Domain.Concrete
         }
         public bool ToBeCaptured()
         {
-            return null
+            return false;
         }
     }
 }
