@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WarcraftChess.Domain.Concrete
 {
-    enum PieceColor
+    public enum PieceColor
     {
         Red,Blue
     };

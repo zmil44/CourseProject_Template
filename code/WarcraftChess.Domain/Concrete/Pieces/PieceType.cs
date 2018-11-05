@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WarcraftChess.Domain.Concrete
 {
-    enum PieceType
+    public enum PieceType
     {
         Warrior,Hunter,Paladin,Mage,Druid,Shaman,Priest
     };
