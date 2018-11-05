@@ -9,8 +9,18 @@ namespace WarcraftChess.Domain.Concrete
     public class Piece
     {
         PieceColor color = new PieceColor();
+        PieceType type = new PieceType();
         Square location = new Square();
         bool moved { get; set; }
+        public Piece(PieceColor color, PieceType type)
+        {
+            this.color = color;
+            this.type = type;
+        }
+
+        public Piece()
+        {
+        }
 
         public Square[] ValidMoves()
         {
@@ -28,7 +38,7 @@ namespace WarcraftChess.Domain.Concrete
         }
         public bool ToBeCaptured()
         {
-            return null
+            return false;
         }
     }
 }
