@@ -26,5 +26,10 @@ namespace WarcraftChess.Controllers
 
             return View();
         }
+
+        public ActionResult Leaderboard()
+        {
+            return View("Leaderboard");
+        }
     }
 }
