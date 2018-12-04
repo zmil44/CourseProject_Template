@@ -1,10 +1,46 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<link href="~/Content/HomePage.css" rel="stylesheet" type="text/css" />
+<body>
+    <header>
+        <p allign="left"><font color="white">Warcraft Chess</font></p>
+        <p text-allign="right">@Html.ActionLink("Login", "Login", new { controller = "Login" }, new { @class = "btn btn-default", role = "button" }) | @Html.ActionLink("Register", "Register", new { controller = "Register" }, new { @class = "btn btn-default", role = "button" })</p>
+    </header>
+    <div class="sidebar" style="width:200px;" id="Sidebar" >
+        <button class="bs-tooltip-left"
+                onclick="sidebar_close()" color="blue">
+            &times;
+        </button>
+        <p>
+            <a href="#">@Html.ActionLink("Home", "", new { controller = "Home" }, new { @class = "btn btn-default", role = "button" })</a>
+        </p>
+        <p>
+            <a href="#">@Html.ActionLink("Leaderboard", "Leaderboard", new { controller = "Leaderboard" }, new { @class = "btn btn-default", role = "button" })</a>
+        </p>
+        <p>
+             <a href="#">@Html.ActionLink("Play", "Chess", new { controller = "Chess" }, new { @class = "btn btn-default", role = "button" })</a>
+        </p>
+    </div>
+
+    <div class="main" style="margin-left:0px">
+
+        <div class="sidebar">
+            <button class="btn align-self-lg-start" onclick="sidebar_open()">&#9776;</button>
+            <div class="sidebar-container">
+            </div>
+        </div>
+    </div>
+    <script>
+        function sidebar_open() {
+            document.getElementById("Sidebar").style.display = "block";
+        }
+        function sidebar_close() {
+            document.getElementById("Sidebar").style.display = "none";
+        }
+    </script>
+</body>
 
 
-<div style="background-image:url(https://vignette.wikia.nocookie.net/classic-quests/images/2/25/Dark-Portal.jpg/revision/latest?cb=20130917210100);width:1080px;height:900px;background-size:auto;background-repeat:no-repeat;">
-
-</div>
 
 
