@@ -3,11 +3,13 @@
 }
 <link href="~/Content/HomePage.css" rel="stylesheet" type="text/css" />
 <body>
+
+
     <header>
         <p allign="left"><font color="white">Warcraft Chess</font></p>
         <p text-allign="right">@Html.ActionLink("Login", "Login", new { controller = "Login" }, new { @class = "btn btn-default", role = "button" }) | @Html.ActionLink("Register", "Register", new { controller = "Register" }, new { @class = "btn btn-default", role = "button" })</p>
     </header>
-    <div class="sidebar" style="width:200px;" id="Sidebar" >
+    <div class="sidebar" style="display:none"  id="Sidebar" >
         <button class="bs-tooltip-left"
                 onclick="sidebar_close()" color="blue">
             &times;
@@ -19,14 +21,20 @@
             <a href="#">@Html.ActionLink("Leaderboard", "Leaderboard", new { controller = "Leaderboard" }, new { @class = "btn btn-default", role = "button" })</a>
         </p>
         <p>
-             <a href="#">@Html.ActionLink("Play", "Chess", new { controller = "Chess" }, new { @class = "btn btn-default", role = "button" })</a>
+            <a href="#">@Html.ActionLink("Play", "Chess", new { controller = "Chess" }, new { @class = "btn btn-default", role = "button" })</a>
+        </p>
+        <p>
+            <audio controls autoplay loop style="display:none">
+                <iframe src="../AudioFiles/HomeScreen.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+                <source src="../AudioFiles/HomeScreen.mp3" type="audio/mpeg">
+            </audio>
         </p>
     </div>
 
     <div class="main" style="margin-left:0px">
 
-        <div class="sidebar">
-            <button class="btn align-self-lg-start" onclick="sidebar_open()">&#9776;</button>
+        <div class="sidebar" >
+            <button class="btn" onclick="sidebar_open()">&#9776;</button>
             <div class="sidebar-container">
             </div>
         </div>
@@ -38,6 +46,7 @@
         function sidebar_close() {
             document.getElementById("Sidebar").style.display = "none";
         }
+
     </script>
 </body>
 
