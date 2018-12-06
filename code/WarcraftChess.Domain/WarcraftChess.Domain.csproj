@@ -60,10 +60,10 @@
     <Compile Include="Concrete\Player.cs" />
     <Compile Include="Concrete\Result.cs" />
     <Compile Include="Concrete\Board\Square.cs" />
+    <Compile Include="Entitiy\Leaderboard.cs" />
+    <Compile Include="Entitiy\UserAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entitiy\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
