@@ -3,5 +3,39 @@
     ViewBag.Title = "Login";
 }
 
-<h2>Login</h2>
+
+
+<body>
+    <style>
+        div.login
+        {
+            text-align: center;
+            vertical-align: text-bottom;
+            margin-top:400px;
+            margin-left: 200px
+            
+        }
+        div.username-Text-Box
+        {
+            margin:10px;
+            opacity:0.5;
+            
+        }
+        div.passwordTextBox {
+            margin: 10px;
+            opacity: 0.5;
+        }
+    </style>
+
+    <div class="login">
+        <form>
+            
+            <div class="username-Text-Box">
+            <p><input type="text" name="username" value="Username" onfocus="this.value=''"/> </p>
+            </div>
+            
+            <div class="passwordTextBox"><p><input c required type="text" name="password" value="Password" onfocus="this.value=''" /></p></div>
+        </form>
+    </div>
+</body>
 
